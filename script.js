@@ -1,4 +1,4 @@
-function slide() {
+(function() {
     const buttons = document.querySelectorAll("button");
     const image = document.querySelector(".img");
     let counter = 1;
@@ -15,6 +15,4 @@ function slide() {
 
         });
     });
-}
-
-slide();
+})()

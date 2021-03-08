@@ -37,10 +37,10 @@ body {
 .btn {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   padding: 0.8rem 1rem;
   outline: none;
   border: none;
+  border: 3px solid #005086;
   border-radius: 5px;
   background-color: #005086;
   font-size: 1.2rem;
@@ -48,12 +48,18 @@ body {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: #318fb5;
+}
+
 .prevbtn {
-  left: -1.4375rem;
+  left: 0;
+  transform: translate(-50%, -50%);
 }
 
 .nextbtn {
-  right: -1.4375rem;
+  right: 0;
+  transform: translate(50%, -50%);
 }
 
 /* Media Query */
@@ -69,6 +75,5 @@ body {
   .slider {
     width: 90%;
     height: 50%;
-
   }
 }
