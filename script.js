@@ -7,10 +7,10 @@
         button.addEventListener("click", function() {
             if ( button.classList.contains("prevbtn") && counter > 1 ) {
                 counter--;
-                image.style.backgroundImage = `url(./image/building${counter}.jpeg)`;
+                image.style.backgroundImage = `url(/image/building${counter}.jpeg)`;
             } else if ( button.classList.contains("nextbtn") && counter < 5) {
                 counter++;
-                image.style.backgroundImage = `url(image/building${counter}.jpeg)`;
+                image.style.backgroundImage = `url(/image/building${counter}.jpeg)`;
             }
 
         });
